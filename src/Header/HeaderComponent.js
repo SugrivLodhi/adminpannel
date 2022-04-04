@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme) => ({
           display:'flex',
           justifyContent:'space-between',
           flexFlow:'row-wrap',
+      },
+      appbar :{
+          width:'100%',
+          height:'40px'
       }
   }));
 export default function HeaderComponent() {
@@ -23,7 +27,7 @@ export default function HeaderComponent() {
     
     return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" >
         <Toolbar className={classes.toolbar}>
           <Typography variant="" className={classes.logo}>
            { "<AdminPannel/>"}
