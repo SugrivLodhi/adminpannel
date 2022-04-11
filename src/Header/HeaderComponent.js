@@ -3,25 +3,14 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { makeStyles } from '@material-ui/core';
+import useStyles from './HeaderStyle';
 import Nav from './Nav';
 import { Messages } from './Messages';
 import Notification from './Notification';
+import { Avatar, Container, Grid, Hidden, IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import Item from './MainContant/Item';
 
-const useStyles = makeStyles((theme) => ({
-      logo:{
-        color :"white"
-      },
-      toolbar :{
-          display:'flex',
-          justifyContent:'space-between',
-          flexFlow:'row-wrap',
-      },
-      appbar :{
-          width:'100%',
-          height:'40px'
-      }
-  }));
 export default function HeaderComponent() {
     const classes = useStyles();
     
@@ -30,15 +19,23 @@ export default function HeaderComponent() {
       <AppBar position="static" >
         <Toolbar className={classes.toolbar}>
           <Typography variant="" className={classes.logo}>
-           { "<AdminPannel/>"}
+           {"Home"}
           </Typography>
-          <Box>
+          <Hidden smDown>
+          <Box style={{display:'flex'}}>
           <Messages/>
           <Notification/>
            <Nav/>
         </Box>
+        </Hidden>
+        <Hidden mdUp>
+        <IconButton>
+         <MenuIcon/>
+        </IconButton>
+        </Hidden>
         </Toolbar>
       </AppBar>
-    </Box>
+      <Item/>
+      </Box>
   );
 }

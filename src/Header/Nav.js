@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
-import {IconButton,Button,Menu,MenuItem ,Badge,ListItemIcon, ListItem, ListItemText, Avatar} from '@mui/material'
-import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import {IconButton,Button,Menu,MenuItem ,Badge,ListItemIcon, ListItem, ListItemText, Avatar} from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import image from './ss.jpg'
