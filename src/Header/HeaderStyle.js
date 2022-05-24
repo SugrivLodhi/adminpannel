@@ -1,21 +1,71 @@
-import { makeStyles } from '@material-ui/core';
- const useStyles = makeStyles((theme) => ({
-    logo: {
-        color: "white"
-    },
+import { makeStyles } from "@material-ui/core";
+import { blueGrey } from "@material-ui/core/colors";
+import { blue } from "@material-ui/core/colors";
+const useStyles = makeStyles((theme) => ({
     toolbar: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        flexFlow: 'row-wrap',
+        display: "flex",
+        flexFlow: "row wrap",
+        justifyContent: "space-between",
     },
-    navList :{
-        minWidth :'250px',
-        maxWidth :'300px'
-    
+    logo: {
+        color: "white",
     },
-    grid:{
-        
-    }
+    navlist: {
+        minWidth: "250px",
+        maxWidth: "300px",
+    },
+    ulAvater: {
+        backgroundColor: blue["A200"],
+        color: "white",
+    },
+    navAvatar: {
+        width: "35px",
+        height: "35px",
+    },
 
+    //wrapper of main contianer
+    wrapper: {
+        minHeight: "100vh",
+        height: "auto",
+        background: "#efefef",
+        marginTop: "60px",
+        padding: theme.spacing(2, 2, 0, 34),
+        [theme.breakpoints.down("sm")]: {
+            padding: theme.spacing(2, 2),
+            marginTop: "45px",
+        },
+    },
+    accord: {
+        width: "77%",
+        marginLeft: '252px'
+    },
+    //Side nav
+    drawerPaper: {
+        width: "250px",
+        marginTop: "65px",
+        [theme.breakpoints.down("sm")]: {
+            marginTop: "0px",
+        },
+    },
+    navlinks: {
+        color: blueGrey["A400"],
+        "& :hover , &:hover div": {
+            color: blue["A200"],
+        },
+        " & div": {
+            color: blueGrey["A400"],
+        },
+    },
+    activeNavlinks: {
+        color: blue["A700"],
+        "& div": {
+            color: blue["A700"],
+        },
+    },
+    navButton: {
+        width: " 100%",
+        textTransform: "capitalize",
+    },
 }));
-export default useStyles
+
+export default useStyles;

@@ -3,27 +3,25 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import useStyles from './HeaderStyle';
-import Nav from './Nav';
-import { Messages } from './Messages';
-import Notification from './Notification';
-import {Hidden, IconButton } from '@mui/material';
+import useStyles from '../HeaderStyle';
+import { Messages } from '../Messages';
+import Notification from '../Notification';
+import { Hidden, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Item from './MainContant/Item';
-import Footer from './MainContant/Footer';
-
-export default function HeaderComponent() {
+import Nav from '../Nav';
+ function Admin() {
     const classes = useStyles();
-    
+      const iconHandler = () =>{
+        console.log('click me')
+      }
     return (
-      <>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" >
         <Toolbar className={classes.toolbar}>
           <Typography variant="" className={classes.logo}>
            {"Home"}
           </Typography>
-          <Hidden smDown>
+          <Hidden mdDown>
           <Box style={{display:'flex'}}>
           <Messages/>
           <Notification/>
@@ -32,14 +30,12 @@ export default function HeaderComponent() {
         </Hidden>
         <Hidden mdUp>
         <IconButton>
-         <MenuIcon/>
+         <MenuIcon  onClick ={iconHandler} />
         </IconButton>
         </Hidden>
         </Toolbar>
       </AppBar>
     </Box>
-    <Item/>
-    <Footer/>
-    </>
   );
 }
+export default Admin

@@ -1,11 +1,22 @@
-import './App.css';
-import HeaderComponent from './Header/HeaderComponent';
 
+import BloakApp from './BlockingSite/BloakApp';
+import './App.css'
+import { createTheme } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
+import { Container } from '@material-ui/core';
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 function App() {
-  return (
-    <div className="App">
-       <HeaderComponent/>    
-      </div>
+  return ( 
+        <ThemeProvider theme={darkTheme}>
+          <Container>
+          <BloakApp/>
+          </Container>
+       </ThemeProvider>
+   
   );
 }
 
