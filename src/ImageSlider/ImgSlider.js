@@ -15,12 +15,13 @@ function ImgSlider({slide}) {
    if(!Array.isArray(slide) || slide.length <=0){
      return null
    }
-   console.log("current value",current);
+   console.log("Hello I am rendering he data for every state change")
   return (
     <section className='slider'>
     <ArrowCircleLeftIcon className='arrow' onClick ={preSlide}/>
     <ArrowCircleRightIcon className='right-arrow' onClick ={nextSlide}/>
       {slide.map((slides,index)=>{
+        console.log("index data",index)
           return(
               <div className={index===current ? 'slide active' : 'slide'} key = {index}>
               {index===current && (<img src ={slides.image}  alt ="all photos" className='image'/>)}

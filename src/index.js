@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css'
+import './index.css'
 import reportWebVitals from './reportWebVitals';
-import Apss from './ImageSlider/Apss';
+import Appi from './Appi';
 ReactDOM.render(
   <React.StrictMode>
-    <Apss/>
+    <Appi/>
   </React.StrictMode>,
   document.getElementById('root')
 );

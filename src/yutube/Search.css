@@ -1,0 +1,21 @@
+.search_page{
+    flex: 0.8;
+    margin-left: 10px;
+}
+.filter_page{
+    display: flex;
+    align-items: center;
+
+}
+.filter_page > h1 {
+    color: rgb(66, 57, 57);
+    font-size: 17px;
+    padding: 10px;
+}
+.filter_page > hr{
+   height: 1px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 0;
+   background-color: lightgray;
+}

@@ -1,0 +1,15 @@
+.reconmended{
+    flex :0.8;
+    background-color: antiquewhite;
+
+}
+.recommendedVideos_video{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+
+
+}
+.reconmended > h1{
+    padding: 20px 30px;
+}

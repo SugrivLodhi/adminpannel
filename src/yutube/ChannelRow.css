@@ -1,0 +1,32 @@
+.channelRow{
+    display: flex;
+    align-items: center;
+}
+.channelRow_text{
+    margin-left: 10px;
+}
+.channelRow_text h1{
+    font-size: 20px;
+    color: rgb(78, 69, 69);
+}
+.channelRow_text p{
+    font-size: 17px;
+    color: rgb(83, 67, 67);
+}
+.subscribers{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+.subscribers button{
+    font-size: 16px;
+    color: rgb(80, 73, 73);
+    background-color: rgb(180, 169, 169);
+    height: 40px;
+    padding: 15px;
+}
+.subscribers .notifiy{
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}

@@ -1,4 +1,7 @@
-.slider {
+.app_page{
+    display: flex;
+}
+/* .slider {
     position: relative;
     height: 100vh;
     display: flex;
@@ -43,4 +46,4 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
-}
+} */
