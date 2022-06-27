@@ -6,10 +6,10 @@
 .recommendedVideos_video{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 2rem;
 
 
 }
 .reconmended > h1{
-    padding: 20px 30px;
+    padding: 2rem 3rem;
 }

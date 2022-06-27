@@ -3,30 +3,30 @@
     align-items: center;
 }
 .channelRow_text{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 .channelRow_text h1{
-    font-size: 20px;
+    font-size: 2rem;
     color: rgb(78, 69, 69);
 }
 .channelRow_text p{
-    font-size: 17px;
+    font-size: 1.7rem;
     color: rgb(83, 67, 67);
 }
 .subscribers{
     display: flex;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 2rem;
 }
 .subscribers button{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: rgb(80, 73, 73);
     background-color: rgb(180, 169, 169);
-    height: 40px;
-    padding: 15px;
+    height: 4rem;
+    padding: 1.5rem;
 }
 .subscribers .notifiy{
-    margin-left: 15px;
-    width: 35px;
-    height: 35px;
+    margin-left: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }

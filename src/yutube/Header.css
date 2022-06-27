@@ -5,15 +5,15 @@
   z-index: 100;
   top: 0;
   position: sticky;
-  padding: 10px;
+  padding: 1rem;
   background-color: white
 
 }
 .header_logo {
-  margin-left: 15px;
+  margin-left: 1.5rem;
 } 
 .header img{
-  height: 95px;
+  height: 9.5rem;
 }
 .header_left {
   display: flex;
@@ -22,7 +22,7 @@
 .header_input{
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  border: 0.1rem solid rgb(124, 116, 116);
   width: 40%;
 }
 .header_input > input{
@@ -31,14 +31,14 @@
   outline: none;
 }
 .header_icon{
-  margin-right: 10px;
+  margin-right: 0.1rem;
 }
 
  .header_searchIcon{
-  width: 50px !important;
+  width: 5rem !important;
   background-color: #fafafa;
   color: gray;
-  border-left: 1px solid rgb(226, 220, 220);
+  border-left: 0.1rem solid rgb(226, 220, 220);
 }
 .header_right{
   display: flex;
